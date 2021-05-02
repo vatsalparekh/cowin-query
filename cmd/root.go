@@ -36,7 +36,10 @@ This will run every few seconds to check if the slots are available.`,
 	Example: `cowin-query --pincode 364002`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
-	// Run: func(cmd *cobra.Command, args []string) { },
+	Run: func(cmd *cobra.Command, args []string) {
+		//	Put all your logic here.
+		fmt.Println("Welcome to cowin-query!")
+	},
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
